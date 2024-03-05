@@ -5,11 +5,12 @@
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin:  auto;
     padding-left: 25px;
     padding-right: 25px;
 }
+
 
 /*Stylise l'en-tête (navbar) de la page*/
 body {
@@ -21,8 +22,8 @@ body {
     flex-direction: column; 
     justify-content: flex-start;
     align-items: center;
-    height: 200px;
-    background-color: #333;
+    height: 175px;
+    background-color: #FFFFFF;
     color: #fff;
 }
 
@@ -35,7 +36,7 @@ body {
 
 .logo a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
     font-weight: bold;
     font-size: 40px;
     cursor: default; /* Désactive le curseur pointer pour rendre le lien non cliquable */
@@ -44,7 +45,7 @@ body {
 
 /*Stylise une barre de navigation horizontale*/
 .main_nav {
-    background-color: #333;
+    background-color: #FFFFFF;
 }
 
 .main_nav ul {
@@ -62,7 +63,7 @@ body {
 
 .main_nav a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
     font-weight: bold;
     font-size: 14px;
     margin: 15px; /* Ajout de marges à gauche et à droite des liens pour l'espace */
@@ -74,30 +75,86 @@ body {
 .row {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centrer horizontalement */
+    justify-content: space-around; /* Centrer horizontalement */
+    flex-wrap: wrap;
     height: 0vh; /* Utiliser pour la hauteur de la page */
 }
 
+
+
 .col-2 {
-    flex-basis: 100%; /* Utiliser pour toute la largeur */
+    flex-basis: 50%;
 }
 
 .col-2 img {
-    width: 100%; /* Utiliser pour la largeur du conteneur parent */
-    height: 0%; /* Utiliser pour la hauteur du conteneur parent */
+    width: 100%;
+    height: auto; /* Permet de conserver le ratio d'aspect de l'image */
     object-fit: cover;
 }
 
-.col-2 h1,
-.col-2 p {
+
+
+/* Style pour la colonne contenant le titre h1 */
+.col-2 h1 {
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: center;
+    font-size: 72px; /* Modifiez la taille de la police selon vos besoins */
 }
 
+/* Style pour la colonne contenant le paragraphe p */
+.col-2 p {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 20px; /* Modifiez la taille de la police selon vos besoins */
+}
+
+
+
+.header-section {
+    background: radial-gradient(#fff, #FFFFFF);
+}
+
+
+
+.options-ul {
+    position: relative;
+    list-style: none;
+    padding: 10px;
+}
+
+.options-ul li {
+    margin-bottom: -20px;
+}
+
+.icon-container {
+    position: absolute;
+    top: -44px;
+    right: -358px;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: 0px; /* Ajustez la valeur pour rapprocher verticalement */
+    right: 0px; /* Ajustez la valeur pour rapprocher horizontalement */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+}
+
+.icon-container img {
+    width: 50px; /* Ajoutez une largeur pour votre icône de panier */
+    height: 50px; /* Ajoutez une hauteur pour votre icône de panier */
+}
 
 
 
