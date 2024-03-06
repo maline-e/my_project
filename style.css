@@ -158,3 +158,41 @@ body {
 
 
 
+/* Reset des marges et des rembourrages par défaut */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de base pour le conteneur de la rangée */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style pour la colonne personnalisée */
+.custom-col {
+    width: 100%;
+    margin: 0 auto; /* Utilisez "auto" pour centrer horizontalement la colonne */
+    background-color: #f0f0f0;
+    border-radius: 0;
+}
+
+/* Style pour le contenu à l'intérieur de la colonne */
+.content {
+    padding: 100px;
+    text-align: center;
+}
+
+/* Style pour les titres */
+h1, h3 {
+    color: #333; /* Couleur du texte */
+    margin-bottom: 10px; /* Ajoute de l'espace en bas des titres */
+}
+
+/* Style pour le texte du paragraphe */
+p {
+    color: #333; /* Couleur du texte légèrement plus claire que les titres */
+    line-height: 2; /* Hauteur de ligne pour une meilleure lisibilité */
+    /*margin-bottom: 0px; /* Ajoute de l'espace en bas du paragraphe */
+}
