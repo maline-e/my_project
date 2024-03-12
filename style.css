@@ -85,7 +85,7 @@ body {
 /* Style pour la colonne contenant le titre h1 */
 .col-2 h1 {
     position: absolute;
-    top: 90%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -95,7 +95,7 @@ body {
 /* Style pour la colonne contenant le paragraphe p */
 .col-2 p {
     position: absolute;
-    top: 110%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -222,3 +222,55 @@ p {
     display: table;
     clear: both;
 }
+
+/* Pour les écrans de taille moyenne (par exemple, tablettes) */
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .logo {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .navbar {
+        height: auto;
+    }
+}
+
+/* Pour les écrans de petite taille (par exemple, smartphones) */
+@media screen and (max-width: 480px) {
+    .navbar {
+        height: auto;
+    }
+    .main_nav ul {
+        flex-direction: column;
+        height: auto;
+    }
+    .main_nav a {
+        margin: 10px 0;
+    }
+    .col-2 h1 {
+        font-size: 36px;
+    }
+    .col-2 p {
+        font-size: 16px;
+    }
+    .prod {
+        padding: 20px;
+    }
+    .prod-text {
+        padding: 20px;
+    }
+    .img3 {
+        width: 100%;
+    }
+    .Mycarousel {
+        width: 100%;
+        float: none;
+    }
+    .content {
+        padding: 50px;
+    }
+}
+
