@@ -199,6 +199,72 @@ p {
 }
 
 
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover; /* Pour remplir complètement le conteneur en conservant le ratio */
+}
+
+
+
+
+.product {
+    display: flex;
+  }
+  .product-item {
+    position: relative;
+  }
+  .product-item a {
+    position: absolute;
+    bottom: 55px; /* Ajustez la position verticale selon vos préférences */
+    left: 120px; /* Placez le bouton au centre horizontalement */
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff; /* Ajoutez une bordure blanche */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .carousel {
     max-width: 1200px;
     margin: auto;
@@ -208,7 +274,7 @@ p {
 .Mycarousel img {
     width: 980px;
     height: 500px;
-}
+}*/
 
 
 
