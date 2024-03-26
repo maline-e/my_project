@@ -7,10 +7,14 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0; /* Applique la couleur de fond au corps */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 100%;
+    max-width: 1200px;
+    width: 95%;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -215,7 +219,6 @@ img {
 
 
 
-
 .product {
     display: flex;
   }
@@ -232,7 +235,61 @@ img {
     color: #fff;
     text-decoration: none;
     border: 2px solid #fff; /* Ajoutez une bordure blanche */
-  }
+}
+.overlay-text {
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    padding: 20px; /* Espacement du texte à l'intérieur de la superposition */
+    text-align: left;
+}
+.overlay-text h2 {
+    margin-top: -15px;
+    font-size: 24px; /* Taille de la police pour le titre */
+    color: #fff
+}
+.overlay-text p {
+    font-size: 18px; /* Taille de la police pour le paragraphe */
+    color: #fff
+}
+
+
+
+.slider-wrapper .image-list {
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr)
+}
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+.slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+.container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    background: red;
+}
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+
+  
   
 
 
@@ -263,18 +320,6 @@ img {
 
 
 
-
-/*
-.carousel {
-    max-width: 1200px;
-    margin: auto;
-    background: #f2f2f2;
-    overflow: auto;
-}
-.Mycarousel img {
-    width: 980px;
-    height: 500px;
-}*/
 
 
 

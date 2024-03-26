@@ -1,0 +1,27 @@
+.product-item {
+    position: relative;
+    margin-right: 100px;
+  }
+  
+  .image-overlay {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Couleur de fond de la superposition */
+    padding: 20px; /* Espacement du texte à l'intérieur de la superposition */
+    text-align: center;
+  }
+  
+  .overlay-text h2 {
+    margin-top: 0;
+  }
+  
+  .overlay-text p {
+    margin-bottom: 10px;
+  }
